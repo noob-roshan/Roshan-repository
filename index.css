@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,400&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.Container{
+    width: 60%;
+    margin: auto;
+    margin-top: 15%;
+display: flex;
+justify-content: space-evenly;  
+}
+
+.Container div{
+    width: 35%;
+    height: 30vh;
+    background-color:white;
+text-align: center;
+font-size: large;
+align-items: center;
+color: rgb(40, 169, 255);
+box-shadow: 0px 0px 5px 1px lightblue;
+border-radius: 10px;
+transition: 0.2s ease;
+}
+
+.Container div:hover{
+    color: white;
+    background-color: rgb(40, 169, 255);
+transform:  rotate(5deg);
+}
+
+.Container-1{
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px lightblue;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 5%;
+    background-color: white;
+}
+
+#Submitbtn{
+    outline: none;
+    border: none;
+    color: white;
+    font-size: medium;
+    height: 50px;
+    width:120px;
+    align-self: center;
+    background-color: rgb(40, 169, 255);
+    border-radius: 10px;
+    margin-top: 5%;
+    transition: 0.2s ease-in-out;
+
+}
+#Submitbtn:hover{
+    transform: scale(1.1);
+}
+
+#ResetBtn{
+    outline: none;
+    border: none;
+    color: white;
+    font-size: medium;
+    height: 50px;
+    width:120px;
+    align-self: center;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 5%;
+    transition: 0.2s ease-in-out;    
+}
+.btnContainer{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin: auto;
+}
+.input-fields{
+    width: 100%;
+    display: flex;
+    flex-direction: column;         
+    align-items: center;
+}
+.InputContainer{  
+    width: 50%; 
+    margin: auto;
+    align-self: center;  
+    display: flex;
+      justify-content: space-between;            
+}
+label{
+    color: rgb(40, 169, 255);
+    font-size: small;
+    
+}
+
+input:focus{
+    box-shadow: 0px 0px 5px 1px lightblue;
+}
+.input-fields input{
+    background-color: transparent;
+font-size: xx-large;
+height: 50px;
+width: 80px;
+outline: none;
+border: none;
+text-align: center;
+color: gray;
+}
+.goBackContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: large;   
+    color: rgb(40, 169, 255); 
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.goBackContainer:hover{
+    background-color: rgb(40, 169, 255);
+    color: white;
+}
+.completeMessage{
+    color: rgb(0, 255, 0);
+    font-size: large;
+    align-self: center;
+    margin-top: 10px;    
+    display: none;
+}
+.title{
+    color: rgb(40, 169, 255);
+    align-self: center;
+}
+@media screen and (max-width : 620px) {
+    .Container{
+       width: 100%;
+       height: 100vh;
+        margin: auto;        
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+    }
+    .Container div{
+        width: 50%;
+        margin: auto;
+        height: 40%;
+        margin-top: 20px;
+        background-color:white;
+    text-align: center;
+    font-size: large;
+    align-items: center;
+    color: rgb(40, 169, 255);
+    box-shadow: 0px 0px 5px 1px lightblue;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    }
+.btnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+    .Container-1{
+        width: 90%;
+        height: 50vh;
+        margin-top: 50px;
+    }
+    #Submitbtn{
+        width: 120px;
+    }
+}
