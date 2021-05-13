@@ -7,7 +7,7 @@ let count = 0;
 let intervalID = null;
 
 document.querySelector('.goBackContainer').addEventListener('click', () => {
-    window.location.href = "/index.html";
+    window.location.href = "/Roshan-repository";
 })
 function ChnageHours() {
     hour = hour - 1;
